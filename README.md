@@ -3,6 +3,8 @@
 
 官方未提供 Node 版的 SDK, 此 SDK 依照官方文档 [华为推送服务 Server 端SDK (HuaweiPushServiceSDK for server)](http://developer.huawei.com/cn/consumer/wiki/index.php)实现.
 
+升级为[HMS](http://developer.huawei.com/consumer/cn/service/hms/catalog/huaweipush_agent.html?page=hmssdk_huaweipush_devguide_server_agent)
+
 目前只实现 Android 通知栏推送功能，其他实现以后补充，欢迎提 PR。
 
 此项目根据 [xiaomi-push](https://github.com/isayme/xiaomi-push) 改写而成。
@@ -26,7 +28,8 @@ msg
   .extras({'user_id': 4843, 'target': 'Greedy Land'});
 var notification = new Notification({
   appId: 'your appId',
-  appSecret: 'your appSecret'
+  appSecret: 'your appSecret',
+  appPkgName: 'your app package name',
 });
 notification.send('your device token', msg, config.callback);
 ```
