@@ -1,18 +1,16 @@
 # huawei-push
-> 华为 Android 推送服务 Node 实现版
+> Huawei Android Push Service Node API
 
-官方未提供 Node 版的 SDK, 此 SDK 依照官方文档 [华为推送服务 Server 端SDK (HuaweiPushServiceSDK for server)](http://developer.huawei.com/cn/consumer/wiki/index.php)实现.
+The SDK for Node version is not officially provided, this SDK is in adaptation to the official document [Huawei Push Service SDK for server](http://developer.huawei.com/cn/consumer/wiki/index.php)
 
-升级为[HMS](http://developer.huawei.com/consumer/cn/service/hms/catalog/huaweipush_agent.html?page=hmssdk_huaweipush_devguide_server_agent)
+Upgrade to [HMS](http://developer.huawei.com/consumer/cn/service/hms/catalog/huaweipush_agent.html?page=hmssdk_huaweipush_devguide_server_agent)
 
-目前只实现 Android 通知栏推送功能，其他实现以后补充，欢迎提 PR。
+At present, only the Android notification push function is implemented. Other implementations will be added later.
 
-此项目根据 [xiaomi-push](https://github.com/isayme/xiaomi-push) 改写而成。
+# Supported features
 
-# 支持的特性
-
-- Message: 用于构建要发送的消息内容
-- Notification: 通知栏推送相关
+- Message: Used to construct the content of the message to be sent
+- Notification: Notification  push related
 
 # 安装及使用
 
@@ -34,13 +32,13 @@ var notification = new Notification({
 notification.send('your device token', msg, config.callback);
 ```
 
-* 注意，自定义信息 extras 华为接口是需要传 Array，但我觉得不方便，所以这里可以支持传字典。
+* Note that custom information Huawei interface needs to transfer Array, but I find it inconvenient, so here can support transfer dictionary.
 
-使用示例可以参看[example](./example).
+Use examples can be seen[example](./example).
 
-# API说明
+# API
 
-请参考 [华为推送服务 Server 端SDK (HuaweiPushServiceSDK for server)](http://developer.huawei.com/cn/consumer/wiki/index.php)。
+Please refer to [Huawei Push Service Server SDK (HuaweiPushServiceSDK for server)](http://developer.huawei.com/cn/consumer/wiki/index.php)。
 
-# 联系我
-`email`: `340052204@qq.com`
+# Licence
+MIT
