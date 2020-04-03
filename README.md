@@ -1,5 +1,5 @@
-# huawei-push
-> Huawei Android Push Service Node API
+# HMS Push
+> Huawei HMS Android Push Service for NodeJS
 
 The SDK for Node version is not officially provided, this SDK is in adaptation to the official document [Huawei Push Service SDK for server](http://developer.huawei.com/cn/consumer/wiki/index.php)
 
@@ -12,11 +12,11 @@ At present, only the Android notification push function is implemented. Other im
 - Message: Used to construct the content of the message to be sent
 - Notification: Notification  push related
 
-# 安装及使用
+# Install
 
     npm install huawei-push --save
 
-# 示例
+# Usage
 
 ```
 var msg = new Message();
